@@ -1,0 +1,34 @@
+00000000_00000000_00000000_00000000//x0      zero  Hard-wired zero   constant 0	 
+00000000_00000000_00000000_00000000//x1	     ra    Return address    caller 调用函数的指令pc
+00000000_00000000_00000000_00000000//x2      sp    Stack pointer     callee 被调用的函数指令pc
+00000000_00000000_00000000_00000000//x3      gp    Global pointer	 
+00000000_00000000_00000000_00000000//x4      tp    Thread pointer	 
+00000000_00000000_00000010_00111000//x5  V   t0    Temporary/alternate link register    caller
+01100000_00011000_00000000_00000000//x6  V   t1    Temporaries    caller
+00000110_00000001_00001100_00001110//x7  V   t2    Temporaries    caller
+00000000_00000000_00000000_00000000//x8      s0/fp Saved register/frame pointer    caller
+00000000_00000000_00000000_00000000//x9      s1    Saved register    caller
+00000000_00000000_00000000_00000000//x10     a0    Function arguments/return values    caller
+00000000_00000000_00000000_00000000//x11     a1    Function arguments/return values    caller
+00000000_00000000_00000000_00000000//x12     a2    Function arguments    caller
+00000000_00000000_00000000_00000000//x13     a3    Function arguments    caller
+00000000_00000000_00000000_00000000//x14     a4    Function arguments    caller
+00000000_00000000_00000000_00000000//x15     a5    Function arguments    caller
+00000000_00000000_00000000_00000000//x16     a6    Function arguments    caller
+00000000_00000000_00000000_00000000//x17     a7    Function arguments    caller
+00000000_00000000_00111000_00000110//x18 V   s2    Saved registers    caller
+00001000_00100000_00000000_00100000//x19 V   s3    Saved registers    caller
+00000000_00000100_00000000_00011001//x20 V   s4    Saved registers    caller
+00000000_00000000_00000000_00000000//x21     s5    Saved registers    caller
+00000000_00000000_00000000_00000000//x22     s6    Saved registers    caller
+00000000_00000000_00000000_00000000//x23     s7    Saved registers    caller
+00000000_00000000_00000000_00000000//x24     s8    Saved registers    caller
+00000000_00000000_00000000_00000000//x25     s9    Saved registers    caller
+00000000_00000000_00000000_00000000//x26     s10   Saved registers    caller
+00000000_00000000_00000000_00000000//x27     s11   Saved registers    caller
+00000000_00000000_00000000_01100000//x28  V  t3    Temporaries    caller
+00000000_00000000_00000000_00001100//x29  V  t4    Temporaries    caller
+00010000_01100000_00000000_00000000//x30  V  t5    Temporaries    caller
+00000010_00100000_00100010_00000000//x31  V  t6    Temporaries    caller
+// for no data hazard
+// 5-bit = [4:0] -> 32 row
